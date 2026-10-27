@@ -42,6 +42,12 @@ endmap
 map hms_brynhild
 endmap
 
+map mi264_pudong_bunker
+endmap
+
+map mi410_bandakar_pass
+endmap
+
 map golden_arrow_movie
 endmap
 
