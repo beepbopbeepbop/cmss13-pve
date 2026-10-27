@@ -1,4 +1,5 @@
 #define SSGT_VARIANT "Staff Sergeant"
+#define SRSGT_VARIANT "Senior Sergeant"
 #define SGT_VARIANT "Sergeant"
 #define CPL_VARIANT "Corporal"
 #define JSGT_VARIANT "Junior Sergeant"
@@ -82,6 +83,18 @@
 	squad = SQUAD_UPP
 	job = /datum/job/marine/tl/ai/upp
 
+/datum/job/marine/tl/ai/upp/forecon
+	title = JOB_SQUAD_TEAM_LEADER_FORECON_UPP
+	total_positions = 1
+	spawn_positions = 1
+	gear_preset = /datum/equipment_preset/uscm/tl/upp/forecon
+	gear_preset_secondary = /datum/equipment_preset/uscm/tl/upp/forecon/sergeant
+	job_options = list(SGT_VARIANT = "SGT", SRSGT_VARIANT = "SrSGT")
+
+/obj/effect/landmark/start/marine/tl/upp/forecon
+	name = JOB_SQUAD_TEAM_LEADER_FORECON_UPP
+	squad = SQUAD_SISSI
+	job = /datum/job/marine/tl/ai/upp/forecon
 /obj/effect/landmark/start/marine/tl/upp/movie
 	squad = SQUAD_UPP_MOVIE
 
