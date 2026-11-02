@@ -289,6 +289,8 @@
 			return /datum/equipment_preset/upp/squadlead
 		if(JOB_SO_UPP)
 			return /datum/equipment_preset/uscm_ship/so/upp/equipped
+		if(JOB_UPP_ADJUTANT)
+			return /datum/equipment_preset/upp/adjutant
 //FORECON Squad
 		if(JOB_SQUAD_TEAM_LEADER_FORECON)
 			return /datum/equipment_preset/uscm/forecon/squad_leader

@@ -95,8 +95,8 @@ UNITED PROGRESSIVE PEOPLES
 		SKILL_POWERLOADER = SKILL_POWERLOADER_MASTER,
 	)
 
-/datum/skills/upp/commissar
-	name = "UPP Starshy Politruk"
+/datum/skills/upp/adjutant
+	name = "UPP State Adjutant"
 	skills = list(
 		SKILL_CONSTRUCTION = SKILL_CONSTRUCTION_ENGI,
 		SKILL_ENGINEER = SKILL_ENGINEER_NOVICE,

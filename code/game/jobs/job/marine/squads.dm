@@ -347,7 +347,7 @@
 	equipment_color = "#e61919"
 	chat_color = "#e67d7d"
 
-/datum/squad/upp/twp
+/datum/squad/upp/two
 	name = "UPPS2"
 	equipment_color = "#ffc32d"
 	chat_color = "#ffe650"

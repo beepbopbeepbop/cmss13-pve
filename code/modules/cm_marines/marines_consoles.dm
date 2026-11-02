@@ -1115,7 +1115,7 @@ GLOBAL_LIST_EMPTY_TYPED(crewmonitor, /datum/crewmonitor)
 				JOB_UPP_COMMANDO = 22,
 				// 30-39: Security
 				JOB_UPP_POLICE = 31,
-				JOB_UPP_COMMISSAR = 41,
+				JOB_UPP_ADJUTANT = 41,
 				// 40-49: MedSci
 				JOB_UPP_LT_DOKTOR = 41,
 				// 50-59: Engineering

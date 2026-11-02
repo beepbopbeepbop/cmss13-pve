@@ -497,9 +497,17 @@
 	for(var/i = 1 to storage_slots)
 		new /obj/item/ammo_magazine/rifle/type71(src)
 
+/obj/item/storage/pouch/magazine/upp/bizon/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/ammo_magazine/smg/bizon(src)
+
 /obj/item/storage/pouch/magazine/large/upp/fill_preset_inventory()
 	for(var/i = 1 to storage_slots)
 		new /obj/item/ammo_magazine/rifle/type71(src)
+
+/obj/item/storage/pouch/magazine/large/upp/bizon/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/ammo_magazine/smg/bizon(src)
 
 /obj/item/storage/pouch/magazine/large/pmc_m39/fill_preset_inventory()
 	for(var/i = 1 to storage_slots)

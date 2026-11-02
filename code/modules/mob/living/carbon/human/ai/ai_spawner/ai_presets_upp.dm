@@ -78,6 +78,11 @@
 	desc = "The leader of a UPP Platoon. Functionally very similar to squad riflemen."
 	path = /datum/equipment_preset/upp/navallead
 
+/datum/human_ai_equipment_preset/upp/adjutant
+	name = "UPP State Adjutant"
+	desc = "Military advisor to UPP units. Functionally similar to the officer, but armed with a ZHNK-72."
+	path = /datum/equipment_preset/upp/adjutant
+
 /datum/human_ai_equipment_preset/upp/military_police
 	name = "UPP - Military Police"
 	desc = "UPP - Military Police, armed with a T73."

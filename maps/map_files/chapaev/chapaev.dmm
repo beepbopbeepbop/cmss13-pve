@@ -1150,6 +1150,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
+/obj/effect/landmark/start/upp_adjutant,
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
 "cf" = (
@@ -1467,14 +1468,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/engineering)
-"cI" = (
-/obj/structure/closet/secure_closet/marine_personal/upp/platoon_commander{
-	can_block_movement = 0;
-	pixel_y = 10
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/engineering)
 "cJ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -1532,8 +1525,8 @@
 /area/golden_arrow/cryo_cells)
 "cN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/computer/secure_data/noaccess{
-	dir = 4;
+/obj/structure/machinery/computer/emails{
+	dir = 8;
 	pixel_y = 4
 	},
 /turf/open/floor/strata/multi_tiles,
@@ -1572,16 +1565,20 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/paper_bin{
 	pixel_y = 6;
-	pixel_x = -3
+	pixel_x = 3
+	},
+/obj/item/device/flashlight/lamp{
+	light_power = 0.8;
+	light_color = "#e7c0a4";
+	light_range = 4;
+	anchored = 1;
+	pixel_y = -9;
+	pixel_x = 5;
+	on = 1
 	},
 /obj/item/tool/pen/clicky{
 	desc = "It's a normal black ink pen.";
-	layer = 3;
-	pixel_x = -5
-	},
-/obj/item/reagent_container/food/drinks/coffeecup{
-	pixel_x = 1;
-	pixel_y = -10
+	layer = 3
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/platoon_sergeant)
@@ -1606,9 +1603,7 @@
 	pixel_x = 27
 	},
 /obj/item/storage/backpack/lightpack/upp,
-/obj/item/tool/crew_monitor{
-	faction = "UPP"
-	},
+/obj/item/tool/crew_monitor/upp,
 /obj/item/clothing/suit/marine/faction/UPP/jacket,
 /obj/item/clothing/suit/marine/lamp,
 /turf/open/floor/strata/floor2,
@@ -2390,7 +2385,12 @@
 	},
 /obj/structure/closet/secure_closet/marine_personal/upp/platoon_commander{
 	can_block_movement = 0;
-	pixel_y = 10
+	pixel_y = 10;
+	pixel_x = -7
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/adjutant{
+	pixel_y = 10;
+	pixel_x = 7
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/cryo_cells)
@@ -3547,24 +3547,23 @@
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
 "ho" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/computer/emails{
-	dir = 8;
-	pixel_y = 4
+/obj/structure/machinery/faxmachine{
+	name = "\improper UPP Military Fax Machine";
+	network = "UPP Encrypted Network";
+	target_department = "UPP High Command";
+	pixel_y = 8
 	},
-/obj/structure/machinery/light/small{
-	light_power = 0.8;
-	light_range = 4;
-	light_color = "#e7c0a4"
-	},
-/turf/open/floor/strata/multi_tiles,
+/turf/open/floor/strata/floor3/east,
 /area/golden_arrow/platoon_sergeant)
 "hq" = (
 /obj/structure/machinery/camera/autoname/golden_arrow{
 	dir = 1;
 	name = "ship-grade camera";
 	network = list("Chapaev");
-	c_tag = "Sergeants Room"
+	c_tag = "State Adjutant's Office"
+	},
+/obj/structure/bed/chair/comfy{
+	dir = 4
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
@@ -3573,9 +3572,6 @@
 	light_power = 0.8;
 	light_range = 4;
 	light_color = "#e7c0a4"
-	},
-/obj/structure/bed/chair/comfy{
-	dir = 8
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
@@ -3693,23 +3689,13 @@
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
 "hK" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/paper_bin{
-	pixel_y = 6;
-	pixel_x = 3
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	layer = 3
-	},
-/obj/item/device/flashlight/lamp{
-	light_power = 0.8;
-	light_color = "#e7c0a4";
-	light_range = 4;
-	anchored = 1;
-	pixel_y = -9;
-	pixel_x = 5;
-	on = 1
+/obj/structure/phone_base/upp_net{
+	name = "State Adjutant's Telephone";
+	phone_category = "Chapaev";
+	phone_id = "State Adjutant's Office";
+	pixel_y = 28;
+	networks_receive = list("USCM","UPP");
+	networks_transmit = list("USCM","UPP")
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/platoon_sergeant)
@@ -3787,31 +3773,29 @@
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
 "hX" = (
-/obj/structure/disposalpipe/segment{
+/obj/item/storage/fancy/cigar,
+/obj/item/tool/lighter/zippo,
+/obj/structure/machinery/light/small{
 	dir = 1;
-	icon_state = "pipe-c"
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
 	},
-/turf/open/floor/plating/plating_catwalk/strata,
+/turf/open/floor/strata/floor3/east,
 /area/golden_arrow/platoon_sergeant)
 "hY" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/upp,
+/turf/open/floor/strata/floor2,
 /area/golden_arrow/platoon_sergeant)
 "hZ" = (
 /obj/structure/pipes/vents/pump{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
+/obj/structure/sign/banners/upp_flag,
+/obj/structure/sign/flag/upp,
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/platoon_sergeant)
 "ia" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 4;
@@ -3822,17 +3806,15 @@
 "ib" = (
 /obj/structure/machinery/door/airlock/upp_utility{
 	dir = 8;
-	name = "\improper Sergeants Room";
-	req_one_access_txt = "240;244"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+	name = "\improper State Adjutant's Office";
+	req_one_access_txt = "240;241"
 	},
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/platoon_sergeant)
 "ic" = (
-/obj/structure/disposalpipe/junction{
-	dir = 4
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -3900,37 +3882,48 @@
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
 "ij" = (
+/obj/item/reagent_container/food/drinks/bottle/vodka/stolichnaya,
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/platoon_sergeant)
+"in" = (
+/turf/open/floor/corsat/marked,
+/area/golden_arrow/platoon_sergeant)
+"io" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/prop/almayer/CICmap/upp{
+	name = "Tactical Map Display";
+	layer = 2.97;
+	icon_state = "shuttle";
+	pixel_x = 7;
+	light_color = "#cf91a2";
+	light_range = 1;
+	light_power = 0.7
+	},
+/obj/structure/machinery/computer/cameras/almayer/vehicle{
+	network = list("Chapaev","Vehicle");
+	pixel_x = -10
+	},
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/platoon_sergeant)
+"iq" = (
+/obj/structure/machinery/power/apc/almayer/east,
 /obj/structure/bookcase{
 	density = 0;
 	icon_state = "book-5";
 	pixel_y = 18;
 	can_block_movement = 0
 	},
-/obj/item/book/manual/engineering_hacking,
-/obj/item/book/manual/evaguide,
+/obj/item/book/codebook/upp{
+	icon_state = "book_green";
+	pixel_y = 4;
+	pixel_x = -1
+	},
 /obj/item/book/manual/surgery{
 	icon_state = "book_tan";
 	color = "#8B9490"
 	},
-/obj/item/prop/magazine/book/uppbooklet{
-	pixel_x = 4;
-	pixel_y = 3
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"in" = (
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/platoon_sergeant)
-"io" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/prop/almayer/CICmap/upp{
-	pixel_y = 6
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"iq" = (
-/obj/structure/machinery/power/apc/almayer/east,
+/obj/item/book/manual/evaguide,
+/obj/item/book/manual/engineering_hacking,
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/platoon_sergeant)
 "ir" = (
@@ -3957,18 +3950,21 @@
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/briefing)
 "iv" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
+/obj/structure/closet/secure_closet/guncabinet{
+	req_one_access = list(240,241);
+	req_access = null;
+	name = "equipment locker"
 	},
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
+/obj/item/storage/belt/gun/type47/revolver,
+/obj/item/device/binoculars/range/designator,
+/obj/item/device/helmet_visor/medical/advanced/upp,
+/obj/item/device/megaphone,
+/obj/item/device/whistle{
+	pixel_y = 8;
+	pixel_x = -8
 	},
-/obj/structure/machinery/disposal,
-/obj/structure/disposalpipe/trunk,
-/turf/open/floor/strata/multi_tiles,
+/obj/item/device/cotablet/upp,
+/turf/open/floor/strata/floor2,
 /area/golden_arrow/platoon_sergeant)
 "iw" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -3997,6 +3993,15 @@
 	layer = 2.9;
 	pixel_x = -6;
 	pixel_y = -3
+	},
+/obj/item/prop/magazine/book/uppbooklet{
+	pixel_x = 4;
+	pixel_y = 3
+	},
+/obj/structure/filingcabinet/security{
+	pixel_y = 16;
+	pixel_x = 8;
+	can_block_movement = 0
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
@@ -8052,16 +8057,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/filingcabinet{
-	pixel_x = 8;
-	pixel_y = 16;
-	can_block_movement = 0
-	},
-/obj/structure/filingcabinet{
-	pixel_x = -8;
-	pixel_y = 16;
-	can_block_movement = 0
-	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
 "wO" = (
@@ -8268,6 +8263,11 @@
 	pixel_x = 8;
 	can_block_movement = 0
 	},
+/obj/structure/filingcabinet{
+	pixel_x = -8;
+	pixel_y = 16;
+	can_block_movement = 0
+	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
 "Jf" = (
@@ -8345,9 +8345,6 @@
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/hangar)
 "PO" = (
-/obj/structure/bed/chair/comfy{
-	dir = 4
-	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
 "PV" = (
@@ -11769,9 +11766,9 @@ mV
 yH
 gZ
 Om
-Om
+hY
+in
 ij
-gt
 gt
 PO
 ec
@@ -11924,8 +11921,8 @@ Om
 iv
 in
 hX
-hK
-ho
+gt
+hr
 ec
 ec
 gJ
@@ -12073,10 +12070,10 @@ mV
 yH
 gZ
 Om
-IT
+Om
+Om
 gt
-hY
-gt
+hK
 hq
 ec
 gr
@@ -12226,8 +12223,8 @@ iY
 gZ
 Om
 wr
+ho
 gt
-hY
 cR
 cN
 ec
@@ -25656,7 +25653,7 @@ mV
 aa
 ac
 af
-cI
+aZ
 aZ
 bW
 aZ

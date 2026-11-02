@@ -68,6 +68,49 @@
 	pay_multiplier = 2.5
 	officer_grade = GRADE_OFFICER
 
+//UPP State Adjutants
+/datum/paygrade/upp/ue7a
+	paygrade = PAY_SHORT_UE7A
+	name = "Adjunct-Sergeant Major"
+	prefix = "Adj. SgtMaj."
+	pay_multiplier = 1.5
+	officer_grade = GRADE_ENLISTED
+
+/datum/paygrade/upp/uo2a
+	paygrade = PAY_SHORT_UO2A
+	name = "Adjunct-Lieutenant"
+	prefix = "Adj. Lt."
+	pay_multiplier = 2
+	officer_grade = GRADE_OFFICER
+
+/datum/paygrade/upp/uo3a
+	paygrade = PAY_SHORT_UO3A
+	name = "Adjunct-Captain"
+	prefix = "Adj. Cpt."
+	pay_multiplier = 2.5
+	officer_grade = GRADE_OFFICER
+
+/datum/paygrade/upp/uo4a
+	paygrade = PAY_SHORT_UO4A
+	name = "Adjunct-Major"
+	prefix = "Adj. Maj."
+	pay_multiplier = 3
+	officer_grade = GRADE_OFFICER
+
+/datum/paygrade/upp/uo6a
+	paygrade = PAY_SHORT_UO6A
+	name = "Adjunct-Colonel"
+	prefix = "Adj. Col."
+	pay_multiplier = 5
+	officer_grade = GRADE_OFFICER
+
+/datum/paygrade/upp/uo7a
+	paygrade = PAY_SHORT_UO7A
+	name = "Adjunct-General"
+	prefix = "Adj. Gen."
+	pay_multiplier = 7
+	officer_grade = GRADE_FLAG
+
 //UPP Officers
 /datum/paygrade/upp/uo1
 	paygrade = PAY_SHORT_UO1
@@ -95,13 +138,6 @@
 	name = "Major"
 	prefix = "Mjr."
 	pay_multiplier = 2.5
-	officer_grade = GRADE_OFFICER
-
-/datum/paygrade/upp/uo4p
-	paygrade = PAY_SHORT_UO4P
-	name = "Political Commissar"
-	prefix = "Pol."
-	pay_multiplier = 5
 	officer_grade = GRADE_OFFICER
 
 /datum/paygrade/upp/uo5
