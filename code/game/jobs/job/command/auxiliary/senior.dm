@@ -37,9 +37,9 @@
 	total_positions = 1
 	spawn_positions = 1
 	prime_priority = TRUE
-	supervisors = "the Company State Adjutant"
+	supervisors = "the State Adjutant's Office"
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
-	gear_preset = /datum/equipment_preset/upp/adjutant
+	gear_preset = /datum/equipment_preset/uscm/upp_adjutant
 	gear_preset_secondary = /datum/equipment_preset/upp/adjutant
 	entry_message_body = "<a href='"+WIKI_PLACEHOLDER+"'> \
 	A State Adjutant is a specialized advisory and morale support role assigned to larger UPP military formations, \

@@ -116,9 +116,9 @@
 /obj/structure/closet/secure_closet/marine_personal/upp/adjutant/spawn_gear()
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/upp(src)
 	new /obj/item/clothing/shoes/marine/upp(src)
-	new /obj/item/clothing/under/marine/veteran/UPP/service(src)
+	new /obj/item/clothing/head/uppcap/beret(src)
+	new /obj/item/clothing/under/marine/veteran/UPP/boiler(src)
 	new /obj/item/clothing/suit/storage/jacket/marine/upp(src)
-	new /obj/item/clothing/head/uppcap/peaked(src)
 
 // ==USCM FORECON== //
 

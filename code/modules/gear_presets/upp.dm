@@ -847,10 +847,11 @@
 	name = "UPP State Adjutant"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
-	skills = /datum/skills/upp/adjutant
+	skills = /datum/skills/upp/kapitan
 	assignment = JOB_UPP_ADJUTANT
 	role_comm_title = "Adj. Lt."
 	rank = JOB_UPP_ADJUTANT
+	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_ENGLISH, LANGUAGE_CHINESE)
 	paygrades = list(PAY_SHORT_UO2A = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_SECURITY, ACCESS_UPP_ARMORY, ACCESS_UPP_FLIGHT, ACCESS_UPP_SQUAD_ONE, ACCESS_UPP_SQUAD_TWO, ACCESS_UPP_LEADERSHIP, ACCESS_UPP_SENIOR_LEAD, ACCESS_UPP_MEDPREP, ACCESS_UPP_TLPREP)
 	idtype = /obj/item/card/id/silver
@@ -888,10 +889,11 @@
 	name = "UPP State Adjutant (Field)"
 	flags = EQUIPMENT_PRESET_EXTRA
 
-	skills = /datum/skills/upp/adjutant
+	skills = /datum/skills/upp/kapitan
 	assignment = JOB_UPP_ADJUTANT
 	role_comm_title = "Adj. Lt."
 	rank = JOB_UPP_ADJUTANT
+	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_ENGLISH, LANGUAGE_CHINESE)
 	paygrades = list(PAY_SHORT_UO2A = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_SECURITY, ACCESS_UPP_ARMORY, ACCESS_UPP_FLIGHT, ACCESS_UPP_SQUAD_ONE, ACCESS_UPP_SQUAD_TWO, ACCESS_UPP_LEADERSHIP, ACCESS_UPP_SENIOR_LEAD, ACCESS_UPP_MEDPREP, ACCESS_UPP_TLPREP)
 	idtype = /obj/item/card/id/silver
