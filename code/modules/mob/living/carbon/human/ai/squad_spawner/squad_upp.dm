@@ -67,7 +67,7 @@
 
 /datum/human_ai_squad_preset/upp/command
 	name = "Naval Infantry, Command Element"
-	desc = "Naval Infantry team armed with 2 AG80 rifles and 1 Type 71 rifle. Best utilized as defended objective, PltCo and Adj not armed effectively."
+	desc = "Naval Infantry team armed with 2 AG80 rifles and 1 Type 71 rifle. Best utilized as defended objective, PltCo is not armed effectively."
 	ai_to_spawn = list(
 		/datum/equipment_preset/upp/officer/naval = 1,
 		/datum/equipment_preset/upp/navallead = 1,

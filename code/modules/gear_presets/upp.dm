@@ -844,12 +844,12 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/upp/adjutant
-	name = "UPP State Adjutant"
+	name = "UPP State Adjutant (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	skills = /datum/skills/upp/kapitan
 	assignment = JOB_UPP_ADJUTANT
-	role_comm_title = "Adj. Lt."
+	role_comm_title = "ADJ"
 	rank = JOB_UPP_ADJUTANT
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_ENGLISH, LANGUAGE_CHINESE)
 	paygrades = list(PAY_SHORT_UO2A = JOB_PLAYTIME_TIER_0)
@@ -886,12 +886,12 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_R_STORE)
 
 /datum/equipment_preset/upp/adjutant_field
-	name = "UPP State Adjutant (Field)"
-	flags = EQUIPMENT_PRESET_EXTRA
+	name = "UPP State Adjutant (Equipped, Field)"
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	skills = /datum/skills/upp/kapitan
 	assignment = JOB_UPP_ADJUTANT
-	role_comm_title = "Adj. Lt."
+	role_comm_title = "ADJ"
 	rank = JOB_UPP_ADJUTANT
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_ENGLISH, LANGUAGE_CHINESE)
 	paygrades = list(PAY_SHORT_UO2A = JOB_PLAYTIME_TIER_0)

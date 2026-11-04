@@ -31,25 +31,3 @@
 	name = JOB_DI
 	icon_state = "sea_spawn"
 	job = /datum/job/command/senior
-
-/datum/job/command/upp_adjutant
-	title = JOB_UPP_ADJUTANT
-	total_positions = 1
-	spawn_positions = 1
-	prime_priority = TRUE
-	supervisors = "the State Adjutant's Office"
-	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
-	gear_preset = /datum/equipment_preset/uscm/upp_adjutant
-	gear_preset_secondary = /datum/equipment_preset/upp/adjutant
-	entry_message_body = "<a href='"+WIKI_PLACEHOLDER+"'> \
-	A State Adjutant is a specialized advisory and morale support role assigned to larger UPP military formations, \
-	present in all major branches of the armed forces. They are a volunteer-only position which is primarily concerned \
-	with providing advice, ideological direction and various support duties such as mental-health counselling, discussing \
-	ideological issues with troops and providing support with communications back home or to higher offices outside of their \
-	immediate chain of command without fear of reprisal. \
-	<br><b>You remember that you've stored your personal gear and uniform are located in the dorm or locker rooms.</b>"
-
-/obj/effect/landmark/start/upp_adjutant
-	name = JOB_UPP_ADJUTANT
-	icon_state = "sea_spawn"
-	job = /datum/job/command/upp_adjutant
