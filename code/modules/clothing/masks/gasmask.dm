@@ -69,6 +69,12 @@
 	icon_state = "pfb"
 	item_state = "pfb"
 
+/obj/item/clothing/mask/gas/military/upp/canc
+	name = "\improper Type 66 gasmask"
+	desc = "Unlicensed CANC modification of the Union's ShMB/4 gasmask. It features additional protective layer and anti-glare self-polarizing lenses. It's also significantly heavier, with some users reporting lenses becoming opaque forever."
+	icon_state = "pfbcanc"
+	item_state = "pfbcanc"
+
 /obj/item/clothing/mask/gas/pve_mopp
 	name = "\improper M2 MOPP mask"
 	desc = "The M2 MOPP mask includes a full covering cowl that securely attaches to the MOPP suit. It is capable of protecting of a variety of radiological and biological threats."

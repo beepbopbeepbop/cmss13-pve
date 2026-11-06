@@ -875,6 +875,16 @@ Defined in conflicts.dm of the #defines folder.
 	else
 		. = ..()
 
+/obj/item/attachable/flashlight/lw317
+	name = "integrated flashlight"
+	desc = "shouldnt be seeing this. . ."
+	icon = 'icons/obj/items/weapons/guns/attachments/rail.dmi'
+	icon_state = "lw317_flashlight"
+	slot = "special"
+	attach_icon = "lw317_flashlight_a"
+	original_state = "lw317_flashlight"
+	original_attach = "lw317_flashlight_a"
+
 /obj/item/attachable/flashlight/grip //Grip Light is here because it is a child object. Having it further down might cause a future coder a headache.
 	name = "underbarrel flashlight grip"
 	desc = "Holy smokes RO man, they put a grip on a flashlight! \nReduces recoil and scatter by a tiny amount. Boosts accuracy by a tiny amount. Works as a light source."
@@ -1325,6 +1335,8 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/scope/mini/army
 	desc = "An ARMAT S4 scope, type designation AN/PVQ-45. 2x magnification optic, increases accuracy while scoped, decreases RoF and increased wield speed."
 	zoom_offset = 4
+
+/obj/item/attachable/scope/mini/canc
 
 //Mini-scope for the scout rifle
 
@@ -2602,6 +2614,13 @@ Defined in conflicts.dm of the #defines folder.
 	desc = "An ABR-40 stock with a sleek paintjob. Wait, did you just take the stock out of a weapon with no grip...? Great job, genius."
 	icon_state = "abr40stock_tac"
 	attach_icon = "abr40stock_tac_a"
+
+/obj/item/attachable/stock/carbine/wood/canc
+	name = "\improper Type 40 \"wooden\" stock"
+	desc = "The default \"wooden\" stock for the Type 40 marksman rifle, the CANC modification of the  L42A battle rifle. Theoretically compatible with an L42. Can't be removed."
+	icon_state = "type40_a"
+	attach_icon = "type40_a"
+	flags_attach_features = NO_FLAGS
 
 /obj/item/attachable/stock/rifle/marksman
 	name = "\improper M41A marksman stock"

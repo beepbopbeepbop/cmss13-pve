@@ -245,3 +245,4 @@
 	damage = 45
 	penetration = ARMOR_PENETRATION_TIER_2
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
+	damage_falloff = DAMAGE_FALLOFF_TIER_4
