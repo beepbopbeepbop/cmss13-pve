@@ -349,7 +349,7 @@
 	faction = FACTION_CANC
 
 /obj/structure/flag/plantable/canc
-	name = "\improper Brazil flag"
-	desc = "The flag of CANC."
+	name = "\improper CANC flag"
+	desc = "The flag of Chinese/Asian-Nation Cooperative."
 	icon_state = "flag_canc_planted"
 	flag_type = /obj/item/flag/plantable/canc
