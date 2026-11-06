@@ -299,8 +299,10 @@
 		if(JOB_CANC_MEDIC)
 			return /datum/equipment_preset/canc/medic
 		if(JOB_CANC_ENGI)
-			return /datum/equipment_preset/canc/at
+			return /datum/equipment_preset/canc/remnant
 		if(JOB_CANC_SPECIALIST)
+			return /datum/equipment_preset/canc/at
+		if(JOB_CANC_MACHINEGUNNER)
 			return /datum/equipment_preset/canc/machinegunner
 //FORECON Squad
 		if(JOB_SQUAD_TEAM_LEADER_FORECON)

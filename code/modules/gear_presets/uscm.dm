@@ -216,7 +216,7 @@
 /datum/equipment_preset/uscm/sg/canc
 	name = "CANC Orbital Army Machinegunner"
 	access = list(ACCESS_CANC_GENERAL, ACCESS_CANC_MACHINEGUN)
-	assignment = JOB_CANC_SPECIALIST
+	assignment = JOB_CANC_MACHINEGUNNER
 	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "MG"
 	languages = list(LANGUAGE_CHINESE)

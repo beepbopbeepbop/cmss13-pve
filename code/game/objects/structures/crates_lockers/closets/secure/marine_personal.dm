@@ -110,6 +110,62 @@
 	new /obj/item/clothing/suit/storage/jacket/marine/upp/naval(src)
 	new /obj/item/clothing/suit/storage/jacket/marine/upp(src)
 
+// ==CANC== //
+
+/obj/structure/closet/secure_closet/marine_personal/canc/spawn_gear()
+	new /obj/item/clothing/head/cmcap/flap/canc(src)
+	new /obj/item/clothing/under/marine/veteran/canc(src)
+	new /obj/item/clothing/shoes/marine/upp/guard/canc(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/canc(src)
+
+/obj/structure/closet/secure_closet/marine_personal/canc/rifleman
+	job = JOB_CANC_RIFLEMAN
+
+/obj/structure/closet/secure_closet/marine_personal/canc/mg
+	job = JOB_CANC_MACHINEGUNNER
+
+/obj/structure/closet/secure_closet/marine_personal/canc/spec
+	job = JOB_CANC_SPECIALIST
+
+/obj/structure/closet/secure_closet/marine_personal/canc/sapper
+	job = JOB_CANC_ENGI
+
+/obj/structure/closet/secure_closet/marine_personal/canc/sapper/spawn_gear()
+	new /obj/item/clothing/head/cmcap/flap/canc(src)
+	new /obj/item/clothing/under/marine/veteran/canc(src)
+	new /obj/item/clothing/shoes/marine/upp/guard/canc(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/canc/engi(src)
+
+/obj/structure/closet/secure_closet/marine_personal/canc/medic
+	job = JOB_CANC_MEDIC
+
+/obj/structure/closet/secure_closet/marine_personal/canc/medic/spawn_gear()
+	new /obj/item/clothing/head/cmcap/flap/canc(src)
+	new /obj/item/clothing/under/marine/veteran/canc(src)
+	new /obj/item/clothing/shoes/marine/upp/guard/canc(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/canc/medic(src)
+
+/obj/structure/closet/secure_closet/marine_personal/canc/ftl
+	job = JOB_CANC_TEAM_LEADER
+
+/obj/structure/closet/secure_closet/marine_personal/canc/rto
+	job = JOB_CANC_RADIO
+
+/obj/structure/closet/secure_closet/marine_personal/canc/rto/spawn_gear()
+	new /obj/item/clothing/head/cmcap/flap/canc(src)
+	new /obj/item/clothing/under/marine/veteran/canc(src)
+	new /obj/item/clothing/shoes/marine/upp/guard/canc(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/canc/command(src)
+
+/obj/structure/closet/secure_closet/marine_personal/canc/stl
+	job = JOB_CANC_SECTION_LEADER
+
+/obj/structure/closet/secure_closet/marine_personal/canc/stl/spawn_gear()
+	new /obj/item/clothing/head/cmcap/flap/canc(src)
+	new /obj/item/clothing/under/marine/veteran/canc(src)
+	new /obj/item/clothing/shoes/marine/upp/guard/canc(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/canc/command(src)
+
 // ==USCM FORECON== //
 
 /obj/structure/closet/secure_closet/marine_personal/forecon/spawn_gear()

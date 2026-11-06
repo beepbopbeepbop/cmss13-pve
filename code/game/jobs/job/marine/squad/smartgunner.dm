@@ -123,7 +123,7 @@
 	squad = SQUAD_UPP
 
 /datum/job/marine/smartgunner/ai/canc
-	title = JOB_CANC_SPECIALIST
+	title = JOB_CANC_MACHINEGUNNER
 	gear_preset = /datum/equipment_preset/uscm/sg/canc
 	gear_preset_secondary = /datum/equipment_preset/uscm/sg/canc/senior_private
 	gear_preset_tertiary = /datum/equipment_preset/uscm/sg/canc/private
@@ -137,8 +137,8 @@
 		gear_preset = gear_preset_tertiary
 
 /obj/effect/landmark/start/marine/smartgunner/canc
-	name = JOB_CANC_SPECIALIST
-	job = JOB_CANC_SPECIALIST
+	name = JOB_CANC_MACHINEGUNNER
+	job = JOB_CANC_MACHINEGUNNER
 	squad = SQUAD_CANC
 
 /datum/job/marine/smartgunner/ai/pmc

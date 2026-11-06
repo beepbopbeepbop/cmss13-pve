@@ -1698,7 +1698,7 @@
 			platoon = "Red Dawn"
 		if(FACTION_CANC)
 			alert_type = /atom/movable/screen/text/screen_text/picture/starting/canc
-			platoon = "31st Expeditionary Platoon"
+			platoon = "Tianjin Hounds"
 		if(FACTION_PMC)
 			alert_type = /atom/movable/screen/text/screen_text/picture/starting/wy
 			platoon = "Azure-15"

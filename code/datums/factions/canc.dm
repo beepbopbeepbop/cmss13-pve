@@ -15,6 +15,8 @@
 			hud_icon_state = "med"
 		if(JOB_CANC_ENGI)
 			hud_icon_state = "sapper"
+		if(JOB_CANC_MACHINEGUNNER)
+			hud_icon_state = "spec"
 		if(JOB_CANC_SPECIALIST)
 			hud_icon_state = "spec"
 		if(JOB_CANC_TEAM_LEADER)
@@ -50,6 +52,7 @@
 		var/squad_clr = H.assigned_squad.equipment_color
 		switch(GET_DEFAULT_ROLE(_role))
 			if(JOB_CANC_MEDIC) hud_icon_state = "med"
+			if(JOB_CANC_MACHINEGUNNER) hud_icon_state = "gun"
 			if(JOB_CANC_SPECIALIST) hud_icon_state = "gun"
 			if(JOB_CANC_TEAM_LEADER) hud_icon_state = "tl"
 			if(JOB_CANC_SECTION_LEADER) hud_icon_state = "leader_a"
