@@ -327,6 +327,24 @@
 	name = "\improper UPP Command Radio Encryption Key"
 	channels = list(RADIO_CHANNEL_UPP_CMD = TRUE, RADIO_CHANNEL_UPP_GEN = TRUE, RADIO_CHANNEL_UPP_ENGI = TRUE, RADIO_CHANNEL_UPP_MED = TRUE, RADIO_CHANNEL_UPP_CCT = TRUE)
 //---------------------------------------------------
+//CANC Keys
+/obj/item/device/encryptionkey/canc
+	name = "\improper CANC Orbital Army Radio Encryption Key"
+	icon_state = "upp_key"
+	channels = list(RADIO_CHANNEL_CANC_GEN = TRUE)
+
+/obj/item/device/encryptionkey/canc/engi
+	name = "\improper CANC Engineering Radio Encryption Key"
+	channels = list(RADIO_CHANNEL_CANC_GEN = TRUE, RADIO_CHANNEL_CANCP_ENGI = TRUE)
+
+/obj/item/device/encryptionkey/canc/medic
+	name = "\improper CANC Medical Radio Encryption Key"
+	channels = list(RADIO_CHANNEL_CANC_GEN = TRUE, RADIO_CHANNEL_CANC_MED = TRUE)
+
+/obj/item/device/encryptionkey/canc/command
+	name = "\improper CANC Command Radio Encryption Key"
+	channels = list(RADIO_CHANNEL_CANC_GEN = TRUE, RADIO_CHANNEL_CANC_CMD = TRUE, RADIO_CHANNEL_CANC_ENGI = TRUE, RADIO_CHANNEL_CANC_MED = TRUE, RADIO_CHANNEL_CANC_CCT = TRUE)
+//---------------------------------------------------
 //CLF Keys
 /obj/item/device/encryptionkey/clf
 	name = "\improper CLF Radio Encryption Key"

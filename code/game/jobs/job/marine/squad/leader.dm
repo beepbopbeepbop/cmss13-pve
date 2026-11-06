@@ -86,6 +86,23 @@ OverrideTimelock(/datum/job/marine/leader, list(
 	squad = SQUAD_UPP
 	job = /datum/job/marine/leader/ai/upp
 
+/datum/job/marine/leader/ai/canc
+	title = JOB_SQUAD_LEADER_UPP
+	gear_preset = /datum/equipment_preset/uscm/leader/canc
+	gear_preset_secondary = /datum/equipment_preset/uscm/leader/canc/staff_sergeant_second_class
+	job_options = list(SSGT_VARIANT = "2SSgt", SGTMJR_VARIANT = "1SSgt")
+
+/datum/job/marine/leader/ai/canc/handle_job_options(option)
+	if(option != SGTMJR_VARIANT)
+		gear_preset = initial(gear_preset)
+	else
+		gear_preset = gear_preset_secondary
+
+/obj/effect/landmark/start/marine/leader/canc
+	name = JOB_CANC_SECTION_LEADER
+	squad = SQUAD_CANC
+	job = /datum/job/marine/leader/ai/canc
+
 /datum/job/marine/leader/ai/pmc
 	title = JOB_PMCPLAT_LEADER
 	gear_preset = /datum/equipment_preset/uscm/pmc/sl

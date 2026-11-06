@@ -30,6 +30,9 @@
 /atom/movable/screen/text/screen_text/picture/red_dawn
 	image_to_play = "red_dawn"
 
+/atom/movable/screen/text/screen_text/picture/canc
+	image_to_play = "unknown"
+
 /atom/movable/screen/text/screen_text/picture/azure
 	image_to_play = "azure_15"
 
@@ -59,6 +62,9 @@
 	image_to_play = "wy"
 
 /atom/movable/screen/text/screen_text/picture/starting/upp
+	image_to_play = "upp"
+
+/atom/movable/screen/text/screen_text/picture/starting/canc
 	image_to_play = "upp"
 
 /atom/movable/screen/text/screen_text/picture/starting/twe

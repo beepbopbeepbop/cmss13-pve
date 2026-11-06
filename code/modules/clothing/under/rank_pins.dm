@@ -512,29 +512,80 @@
 	icon_state = "ranks_flagofficer"
 
 /*################################################
+################ CANC Orbital Army ###############
+################################################*/
+/obj/item/clothing/accessory/ranks/canc
+	name = "CANC collar tabs"
+	rank_short = null
+	icon_state = "ranks_canc"
+
+// JUNIOR ENLISTED
+/obj/item/clothing/accessory/ranks/canc/e1
+	rank_short = PAY_SHORT_CAE1
+
+/obj/item/clothing/accessory/ranks/canc/e2
+	rank_short = PAY_SHORT_CAE2
+
+/obj/item/clothing/accessory/ranks/canc/e3
+	rank_short = PAY_SHORT_CAE3
+
+// SENIOR ENLISTED
+/obj/item/clothing/accessory/ranks/canc/e4
+	rank_short = PAY_SHORT_CAE4
+
+/obj/item/clothing/accessory/ranks/canc/e5
+	rank_short = PAY_SHORT_CAE5
+
+/obj/item/clothing/accessory/ranks/canc/e6
+	rank_short = PAY_SHORT_CAE6
+
+/obj/item/clothing/accessory/ranks/canc/e7
+	rank_short = PAY_SHORT_CAE7
+
+// COMMAND ENLISTED
+/obj/item/clothing/accessory/ranks/canc/e8
+	rank_short = PAY_SHORT_CAE8
+
+/obj/item/clothing/accessory/ranks/canc/e9
+	rank_short = PAY_SHORT_CAE9
+
+// JUNIOR OFFICERS
+/obj/item/clothing/accessory/ranks/canc/o1
+	rank_short = PAY_SHORT_CAO1
+
+/obj/item/clothing/accessory/ranks/canc/o2
+	rank_short = PAY_SHORT_CAO2
+
+/obj/item/clothing/accessory/ranks/canc/o3
+	rank_short = PAY_SHORT_CAO3
+
+/obj/item/clothing/accessory/ranks/canc/o4
+	rank_short = PAY_SHORT_CAO4
+
+// SENIOR OFFICERS
+/obj/item/clothing/accessory/ranks/canc/o5
+	rank_short = PAY_SHORT_CAO5
+
+/obj/item/clothing/accessory/ranks/canc/o6
+	rank_short = PAY_SHORT_CAO6
+
+/obj/item/clothing/accessory/ranks/canc/o7
+	rank_short = PAY_SHORT_CAO7
+
+// GENERAL OFFICERS
+/obj/item/clothing/accessory/ranks/canc/o8
+	rank_short = PAY_SHORT_CAO8
+
+/obj/item/clothing/accessory/ranks/canc/o9
+	rank_short = PAY_SHORT_CAO9
+
+/obj/item/clothing/accessory/ranks/canc/o10
+	rank_short = PAY_SHORT_CAO10
+
+/*################################################
 ################# SPECIAL  #################
 ################################################*/
 /obj/item/clothing/accessory/ranks/special/insp
 	name = "rank boards"
 	rank_short = "PvI"
 	icon_state = "ranks_pvstofficer"
-
-/obj/item/clothing/accessory/ranks/canc
-	name = "CANC collar tabs"
-	rank_short = null
-	icon_state = "ranks_canc"
-
-/obj/item/clothing/accessory/ranks/canc/e1
-	rank_short = PAY_SHORT_CA1
-
-/obj/item/clothing/accessory/ranks/canc/e2
-	rank_short = PAY_SHORT_CA2
-
-/obj/item/clothing/accessory/ranks/canc/e3
-	rank_short = PAY_SHORT_CA3
-
-/obj/item/clothing/accessory/ranks/canc/e4
-	rank_short = PAY_SHORT_CA4
-
-/obj/item/clothing/accessory/ranks/canc/e5
-	rank_short = PAY_SHORT_CA5

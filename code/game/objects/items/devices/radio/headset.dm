@@ -756,12 +756,42 @@
 	initial_keys = list(/obj/item/device/encryptionkey/upp/command)
 
 /obj/item/device/radio/headset/almayer/marine/solardevils/canc
-	name = "CANC headset"
+	name = "CANC Orbital Army headset"
 	desc = "A special headset used by CANC military."
 	icon_state = "upp_headset"
 	item_state = "upp_headset"
-	frequency = CLF_FREQ
-	has_hud = FALSE //Until we get CANC stuff, this'll do
+	frequency = CANC_FREQ
+	minimap_type = MINIMAP_FLAG_UPP
+	hud_type = list(MOB_HUD_FACTION_CANC)
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/canc/engi
+	name = "CANC-ENG headset"
+	desc = "A special headset used by CANC military. Channels are as follows: #n - engineering."
+	initial_keys = list(/obj/item/device/encryptionkey/canc/engi)
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/canc/medic
+	name = "CANC-MED headset"
+	desc = "A special headset used by CANC military. Channels are as follows: #m - medical."
+	initial_keys = list(/obj/item/device/encryptionkey/canc/medic)
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/canc/command
+	name = "CANC-CMD headset"
+	desc = "A special headset used by CANC military. Channels are as follows: #n - engineering, #m - medical, #v - command."
+	initial_keys = list(/obj/item/device/encryptionkey/canc/command)
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/canc/synth
+	name = "CANC Synth headset"
+	desc = "A special headset used by various synthetics of the CANC military."
+	volume = RADIO_VOLUME_IMPORTANT
+	has_tracker = TRUE
+	misc_tracking = TRUE
+	locate_setting = TRACKER_ASL
+
+	inbuilt_tracking_options = list(
+		"Platoon Commander" = TRACKER_PLTCO,
+		"Section Leader" = TRACKER_ASL,
+		"Landing Zone" = TRACKER_LZ
+	)
 
 /obj/item/device/radio/headset/almayer/cia
 	name = "radio headset"

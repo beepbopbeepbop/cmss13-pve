@@ -195,6 +195,36 @@
 	//To stop this being renamed to the first-spawned-in unit and breaking things
 	UnregisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE)
 
+/datum/squad/marine/canc
+	name = SQUAD_CANC
+	equipment_color = "#8B0000"
+	chat_color = "#B22222"
+	access = list(ACCESS_CANC_GENERAL)
+	radio_freq = CANC_FREQ
+	minimap_color = MINIMAP_SQUAD_CANC
+	use_stripe_overlay = FALSE
+	usable = TRUE
+	faction = FACTION_CANC
+	squad_type = "Platoon"
+	squad_one_access = ACCESS_CANC_SQUAD_ONE
+	squad_two_access = ACCESS_CANC_SQUAD_TWO
+
+/datum/squad/marine/canc/New()
+	. = ..()
+
+	RegisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
+
+/datum/squad/marine/canc/secondary
+	name = SQUAD_CANC_2
+	equipment_color = "#dfab1c"
+	chat_color = "#e0c31a"
+	usable = FALSE
+
+/datum/squad/marine/canc/secondary/New()
+	. = ..()
+	//To stop this being renamed to the first-spawned-in unit and breaking things
+	UnregisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE)
+
 /datum/squad/marine/forecon
 	name = SQUAD_LRRP
 	access = list(ACCESS_MARINE_ALPHA)

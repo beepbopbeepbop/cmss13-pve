@@ -11,5 +11,5 @@
 	faction_tag = FACTION_TWE_REBEL
 
 /datum/faction/rebels/canc
-	name = "Chinese Asian Nation Cooperative Loyalists"
+	name = "Chinese/Asian Nation Cooperative Loyalists"
 	faction_tag = FACTION_CANC

@@ -433,6 +433,11 @@
 	name = "upp late join"
 	squad = SQUAD_UPP
 
+/obj/effect/landmark/late_join/canc
+	name = "canc late join"
+	squad = SQUAD_CANC
+
+
 /obj/effect/landmark/late_join/rmc
 	name = "rmc late join"
 	squad = SQUAD_RMC

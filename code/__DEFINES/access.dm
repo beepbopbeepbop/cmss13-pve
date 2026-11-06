@@ -173,6 +173,30 @@ most of them are tied into map-placed objects. This should be reworked in the fu
 
 //=================================================
 
+//Chinese/Asian Nation Cooperative access levels (319-359)
+///Found on just about all CANC ID cards
+#define ACCESS_CANC_GENERAL 320
+#define ACCESS_CANC_MEDICAL 321
+#define ACCESS_CANC_ENGINEERING 322
+#define ACCESS_CANC_SECURITY 323
+#define ACCESS_CANC_ARMORY 324
+#define ACCESS_CANC_FLIGHT 325
+#define ACCESS_CANC_RESEARCH 326
+
+#define ACCESS_CANC_SQUAD_ONE 327
+#define ACCESS_CANC_SQUAD_TWO 328
+
+#define ACCESS_CANC_COMMANDO 329
+///Leadership, CAE4+ or CAO1+
+#define ACCESS_CANC_LEADERSHIP 330
+///Senior leadership, CAE8+ or CAO5+
+#define ACCESS_CANC_SENIOR_LEAD 331
+
+#define ACCESS_CANC_MEDPREP 332
+#define ACCESS_CANC_MACHINEGUN 333
+#define ACCESS_CANC_TLPREP 334
+//=================================================
+
 // Yautja Access Levels
 /// Requires a visible ID chip to open
 #define ACCESS_YAUTJA_SECURE 390
@@ -230,6 +254,10 @@ most of them are tied into map-placed objects. This should be reworked in the fu
 ///All access levels associated with UPP
 #define ACCESS_LIST_UPP_ALL "UPP (ALL)"
 #define ACCESS_LIST_UPP_PLATOON "UPP (Platoon)"
+
+///All access levels associated with CANC
+#define ACCESS_LIST_CANC_ALL "UPP (ALL)"
+#define ACCESS_LIST_CANC_PLATOON "CANC (Platoon)"
 
 ///Generic/basic access to CLF stuff
 #define ACCESS_LIST_CLF_BASE "CLF (Basic)"

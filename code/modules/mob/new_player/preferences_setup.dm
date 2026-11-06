@@ -289,6 +289,19 @@
 			return /datum/equipment_preset/upp/squadlead
 		if(JOB_SO_UPP)
 			return /datum/equipment_preset/uscm_ship/so/upp/equipped
+//CANC Platoon
+		if(JOB_CANC_RIFLEMAN)
+			return /datum/equipment_preset/canc/remnant
+		if(JOB_CANC_SECTION_LEADER)
+			return /datum/equipment_preset/canc/remnant/leader
+		if(JOB_CANC_TEAM_LEADER)
+			return /datum/equipment_preset/canc/remnant/marksman
+		if(JOB_CANC_MEDIC)
+			return /datum/equipment_preset/canc/medic
+		if(JOB_CANC_ENGI)
+			return /datum/equipment_preset/canc/at
+		if(JOB_CANC_SPECIALIST)
+			return /datum/equipment_preset/canc/machinegunner
 //FORECON Squad
 		if(JOB_SQUAD_TEAM_LEADER_FORECON)
 			return /datum/equipment_preset/uscm/forecon/squad_leader

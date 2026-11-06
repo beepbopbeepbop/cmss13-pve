@@ -17,6 +17,8 @@
 #define SQUAD_ARMY "US Army"
 #define SQUAD_UPP "Red Dawn"
 #define SQUAD_UPP_2 "Golden Embers"
+#define SQUAD_CANC "31st Expeditionary Platoon"
+#define SQUAD_CANC_2 "32nd Expeditionary Platoon"
 #define SQUAD_PMCPLT "AZURE-15"
 #define SQUAD_PMCPLT_2 "VIRIDIAN-22"
 #define SQUAD_PMCPLT_SMALL "AZURE-16"
@@ -374,6 +376,34 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_UPP_CREWMAN "Tank Crewman"
 
 #define JOB_UPP_COMMISSAR "Political Commissar"
+
+//-------- CANC --------//
+#define JOB_CANC_RIFLEMAN "Orbital Army Rifleman"
+#define JOB_CANC_ENGI "Orbital Army Sapper"
+#define JOB_CANC_MEDIC "Orbital Army Medic"
+#define JOB_CANC_SPECIALIST "Orbital Army Weapons Specialist"
+#define JOB_CANC_TEAM_LEADER "Orbital Army Fireteam Leader"
+#define JOB_CANC_RADIO "Orbital Army Radio/Telephone Operator"
+#define JOB_CANC_SECTION_LEADER "Orbital Army Section Leader"
+
+#define JOB_CANC_VEHICLE_CREW "Orbital Army Mechanised Crewman"
+#define JOB_CANC_VEHICLE_LEADER "Orbital Army Mechanised Leader"
+
+#define JOB_CANC_SUPPORT_LOGI "Orbital Army Logistics Support Technician"
+#define JOB_CANC_SUPPORT_ENGI "Orbital Army Engineering Support Technician"
+#define JOB_CANC_SUPPORT_MEDIC "Orbital Army Medical Support Technician"
+
+#define JOB_CANC_SYNTH_SUPPORT "Orbital Army Synthetic Support Unit"
+#define JOB_CANC_SYNTH_COMBAT "Orbital Army Synthetic Combat Unit"
+
+#define JOB_CANC_PLATOON_LEADER "Orbital Army Platoon Commander"
+#define JOB_CANC_COMPANY_LEADER "Orbital Army Company Commander"
+#define JOB_CANC_BATTALION_LEADER "Orbital Army Battalion Commander"
+#define JOB_CANC_BRIGADE_LEADER "Orbital Army Brigade Commander"
+#define JOB_CANC_CORPS_LEADER "Orbital Army Corps Commander"
+
+#define JOB_CANC_GRUNT_LIST list(JOB_CANC_RIFLEMAN, JOB_CANC_ENGI, JOB_CANC_SPECIALIST, JOB_CANC_TEAM_LEADER, JOB_CANC_RADIO, JOB_CANC_SECTION_LEADER)
+#define JOB_CANC_COMMAND_LIST list(JOB_CANC_PLATOON_LEADER, JOB_CANC_COMPANY_LEADER, JOB_CANC_BATTALION_LEADER, JOB_CANC_BRIGADE_LEADER, JOB_CANC_BRIGADE_LEADER, JOB_CANC_CORPS_LEADER)
 
 //-------- CLF --------//
 #define JOB_CLF "CLF Guerilla"

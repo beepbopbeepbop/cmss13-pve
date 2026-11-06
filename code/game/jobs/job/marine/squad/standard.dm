@@ -111,6 +111,40 @@
 	squad = SQUAD_UPP
 	job = /datum/job/marine/standard/ai/upp
 
+/datum/job/marine/standard/ai/canc
+	title = JOB_CANC_RIFLEMAN
+	gear_preset = /datum/equipment_preset/uscm/pfc/canc
+	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/canc/private
+	job_options = list(PVT_VARIANT = "JrPvt", SR_PVT_VARIANT = "SnPvt")
+
+/datum/job/marine/standard/ai/canc/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == PVT_VARIANT)
+		gear_preset = gear_preset_secondary
+
+/obj/effect/landmark/start/marine/canc
+	name = JOB_CANC_RIFLEMAN
+	squad = SQUAD_CANC
+	job = /datum/job/marine/standard/ai/canc
+
+/datum/job/marine/standard/ai/rto/canc
+	title = JOB_CANC_RIFLEMAN
+	gear_preset = /datum/equipment_preset/uscm/pfc/canc
+	gear_preset_secondary = /datum/equipment_preset/uscm/rto/canc/senior_private
+	gear_preset_tertiary = /datum/equipment_preset/uscm/rto/canc/private
+	job_options = list(PVT_VARIANT = "JrPvt", SR_PVT_VARIANT = "SnPvt", CPL_VARIANT = "Cpl")
+
+/datum/job/marine/standard/ai/rto/canc/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == SR_PVT_VARIANT)
+		gear_preset = gear_preset_secondary
+	if(option == PVT_VARIANT)
+		gear_preset = gear_preset_tertiary
+
+/obj/effect/landmark/start/marine/rto/canc
+	name = JOB_CANC_RADIO
+	squad = SQUAD_CANC
+	job = /datum/job/marine/standard/ai/rto/canc
 
 /datum/job/marine/standard/ai/pmc
 	title = JOB_PMCPLAT_STANDARD

@@ -184,6 +184,8 @@
 			return "WYC"
 		if(UPP_CCT_FREQ, UPP_KDO_FREQ)
 			return "UPP"
+		if(CANC_CCT_FREQ)
+			return "CANC"
 		else
 			return "X"
 
@@ -264,6 +266,9 @@
 	frequency = UPP_KDO_FREQ
 	req_one_access = list(ACCESS_UPP_COMMANDO)
 
+/obj/item/device/radio/listening_bug/radio_linked/canc
+	frequency = CANC_CCT_FREQ
+	req_one_access = list(ACCESS_CANC_COMMANDO, ACCESS_CANC_SECURITY, ACCESS_CANC_SENIOR_LEAD)
 
 // ENCRYPTION KEYS FOR LISTENING IN!
 //REQURIES SUBSPACE ACTIVATION ON THE BUGS FIRST!

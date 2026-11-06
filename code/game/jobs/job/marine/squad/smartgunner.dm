@@ -122,6 +122,25 @@
 	job = JOB_SQUAD_SMARTGUN_UPP
 	squad = SQUAD_UPP
 
+/datum/job/marine/smartgunner/ai/canc
+	title = JOB_CANC_SPECIALIST
+	gear_preset = /datum/equipment_preset/uscm/sg/canc
+	gear_preset_secondary = /datum/equipment_preset/uscm/sg/canc/senior_private
+	gear_preset_tertiary = /datum/equipment_preset/uscm/sg/canc/private
+	job_options = list(PVT_VARIANT = "JrPvt", SR_PVT_VARIANT = "SnPvt", CPL_VARIANT = "Cpl")
+
+/datum/job/marine/smartgunner/ai/canc/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == SR_PVT_VARIANT)
+		gear_preset = gear_preset_secondary
+	if(option == PVT_VARIANT)
+		gear_preset = gear_preset_tertiary
+
+/obj/effect/landmark/start/marine/smartgunner/canc
+	name = JOB_CANC_SPECIALIST
+	job = JOB_CANC_SPECIALIST
+	squad = SQUAD_CANC
+
 /datum/job/marine/smartgunner/ai/pmc
 	title = JOB_PMCPLAT_SG
 	gear_preset = /datum/equipment_preset/uscm/pmc/sg

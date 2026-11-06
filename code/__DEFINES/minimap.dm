@@ -68,6 +68,7 @@ GLOBAL_LIST_INIT(all_minimap_flags, bitfield2list(MINIMAP_FLAG_ALL))
 #define MINIMAP_SQUAD_SOF "#400000"
 #define MINIMAP_SQUAD_INTEL "#053818"
 #define MINIMAP_SQUAD_UPP "#B22222"
+#define MINIMAP_SQUAD_CANC "#8B0000"
 #define MINIMAP_SQUAD_RMC "#aa740f"
 #define MINIMAP_SQUAD_PMC "#ccffe9"
 

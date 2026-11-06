@@ -1,23 +1,23 @@
 /datum/equipment_preset/canc
-	name = "CANC Rebel"
+	name = "CANC Orbital Army Remnant"
 	languages = list(LANGUAGE_CHINESE)
 	ethnicity = CHINESE_ETHNICITY
 	flags = null
 	faction = FACTION_CANC
 	faction_group = FACTION_LIST_CANC
 	skills = /datum/skills/pfc
-	paygrades = list(PAY_SHORT_CA1 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
 	origin_override = ORIGIN_CANC
 	idtype = /obj/item/card/id/dogtag
 
 /datum/equipment_preset/canc/New()
 	. = ..()
-	access = get_access(ACCESS_LIST_CLF_BASE)
+	access = get_access(ACCESS_CANC_GENERAL)
 
 /datum/equipment_preset/canc/remnant
-	name = "CANC Rebel, Rifleman"
+	name = "CANC Orbital Army Remnant, Rifleman"
 	flags = EQUIPMENT_PRESET_EXTRA
-	assignment = "Rifleman"
+	assignment = JOB_CANC_RIFLEMAN
 
 /datum/equipment_preset/canc/remnant/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
@@ -54,10 +54,10 @@
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles/orange(new_human), WEAR_IN_HELMET)
 
 /datum/equipment_preset/canc/remnant/leader
-	name = "CANC Rebel, Unit Leader"
+	name = "CANC Orbital Army Remnant, Fireteam Leader"
 	flags = EQUIPMENT_PRESET_EXTRA
-	paygrades = list(PAY_SHORT_CA5 = JOB_PLAYTIME_TIER_0)
-	assignment = "Unit Leader"
+	paygrades = list(PAY_SHORT_CAE4 = JOB_PLAYTIME_TIER_0)
+	assignment = JOB_CANC_TEAM_LEADER
 	skills = /datum/skills/tl
 
 /datum/equipment_preset/canc/remnant/leader/load_gear(mob/living/carbon/human/new_human)
@@ -97,9 +97,9 @@
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles/orange(new_human), WEAR_IN_HELMET)
 
 /datum/equipment_preset/canc/remnant/marksman
-	name = "CANC Rebel, Marksman"
+	name = "CANC Orbital Army Remnant, Marksman"
 	flags = EQUIPMENT_PRESET_EXTRA
-	paygrades = list(PAY_SHORT_CA2 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
 	assignment = "Marksman"
 
 /datum/equipment_preset/canc/remnant/marksman/load_gear(mob/living/carbon/human/new_human)
@@ -147,11 +147,12 @@
 //
 
 /datum/equipment_preset/canc/machinegunner
-	name = "CANC Rebel, Machinegunner"
+	name = "CANC Orbital Army Remnant, Machinegunner"
 	flags = EQUIPMENT_PRESET_EXTRA
+	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
 	assignment = "Machinegunner"
 	skills = /datum/skills/smartgunner
-	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_MACHINEGUN)
+	access = list(ACCESS_CANC_GENERAL, ACCESS_CANC_MACHINEGUN)
 
 /datum/equipment_preset/canc/machinegunner/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
@@ -186,8 +187,9 @@
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles/orange(new_human), WEAR_IN_HELMET)
 
 /datum/equipment_preset/canc/at
-	name = "CANC Rebel, Anti-Tank"
+	name = "CANC Orbital Army Remnant, Anti-Tank"
 	flags = EQUIPMENT_PRESET_EXTRA
+	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
 	assignment = "Anti-Tank Rifleman"
 
 /datum/equipment_preset/canc/at/load_gear(mob/living/carbon/human/new_human)
@@ -231,10 +233,10 @@
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles/orange(new_human), WEAR_IN_HELMET)
 
 /datum/equipment_preset/canc/medic
-	name = "CANC Rebel, Medic"
+	name = "CANC Orbital Army Remnant, Medic"
 	flags = EQUIPMENT_PRESET_EXTRA
-	assignment = "Medic"
-	paygrades = list(PAY_SHORT_CA2 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
+	assignment = JOB_CANC_MEDIC
 
 /datum/equipment_preset/canc/medic/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"

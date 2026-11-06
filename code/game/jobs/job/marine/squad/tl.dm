@@ -79,6 +79,21 @@
 	squad = SQUAD_UPP
 	job = /datum/job/marine/tl/ai/upp
 
+/datum/job/marine/tl/ai/canc
+	title = JOB_CANC_TEAM_LEADER
+	gear_preset = /datum/equipment_preset/uscm/tl/canc
+	gear_preset_secondary = /datum/equipment_preset/uscm/tl/canc/junior_sergeant
+	job_options = list(JSGT_VARIANT = "2Sgt", SGT_VARIANT = "1Sgt")
+
+/datum/job/marine/tl/ai/canc/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == JSGT_VARIANT)
+		gear_preset = gear_preset_secondary
+
+/obj/effect/landmark/start/marine/tl/canc
+	name = JOB_CANC_TEAM_LEADER
+	squad = SQUAD_CANC
+	job = /datum/job/marine/tl/ai/canc
 
 /datum/job/marine/tl/ai/pmc
 	title = JOB_PMCPLAT_FTL
