@@ -519,37 +519,38 @@
 	rank_short = null
 	icon_state = "ranks_canc"
 
-// JUNIOR ENLISTED
+// ENLISTED
 /obj/item/clothing/accessory/ranks/canc/e1
 	rank_short = PAY_SHORT_CAE1
 
 /obj/item/clothing/accessory/ranks/canc/e2
 	rank_short = PAY_SHORT_CAE2
 
+// JUNIOR NCO
 /obj/item/clothing/accessory/ranks/canc/e3
 	rank_short = PAY_SHORT_CAE3
 
-// SENIOR ENLISTED
 /obj/item/clothing/accessory/ranks/canc/e4
 	rank_short = PAY_SHORT_CAE4
 
+// SENIOR NCO
 /obj/item/clothing/accessory/ranks/canc/e5
 	rank_short = PAY_SHORT_CAE5
 
 /obj/item/clothing/accessory/ranks/canc/e6
 	rank_short = PAY_SHORT_CAE6
 
+// COMMAND NCO
 /obj/item/clothing/accessory/ranks/canc/e7
 	rank_short = PAY_SHORT_CAE7
 
-// COMMAND ENLISTED
 /obj/item/clothing/accessory/ranks/canc/e8
 	rank_short = PAY_SHORT_CAE8
 
 /obj/item/clothing/accessory/ranks/canc/e9
 	rank_short = PAY_SHORT_CAE9
 
-// JUNIOR OFFICERS
+// JUNIOR OFFICER
 /obj/item/clothing/accessory/ranks/canc/o1
 	rank_short = PAY_SHORT_CAO1
 
@@ -562,7 +563,7 @@
 /obj/item/clothing/accessory/ranks/canc/o4
 	rank_short = PAY_SHORT_CAO4
 
-// SENIOR OFFICERS
+// SENIOR OFFICER
 /obj/item/clothing/accessory/ranks/canc/o5
 	rank_short = PAY_SHORT_CAO5
 
@@ -572,7 +573,7 @@
 /obj/item/clothing/accessory/ranks/canc/o7
 	rank_short = PAY_SHORT_CAO7
 
-// GENERAL OFFICERS
+// GENERAL OFFICER
 /obj/item/clothing/accessory/ranks/canc/o8
 	rank_short = PAY_SHORT_CAO8
 

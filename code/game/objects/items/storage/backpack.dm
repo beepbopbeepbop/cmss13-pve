@@ -607,8 +607,8 @@ GLOBAL_LIST_EMPTY_TYPED(radio_packs, /obj/item/storage/backpack/marine/satchel/r
 	icon_state = "upp_rto_backpack"
 	item_state = "upp_rto_backpack"
 	phone_category = PHONE_CANC_SOLDIER
-	networks_receive = list(FACTION_UPP)
-	networks_transmit = list(FACTION_UPP)
+	networks_receive = list(FACTION_CANC)
+	networks_transmit = list(FACTION_CANC)
 
 /obj/item/storage/backpack/marine/smock
 	name = "\improper camo smock"

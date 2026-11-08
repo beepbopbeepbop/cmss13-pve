@@ -730,6 +730,37 @@
 	if(!late_join)
 		add_verb(new_human.client, /client/proc/commander_rename_platoon)
 
+/datum/equipment_preset/uscm_ship/so/canc
+	name = "CANC Platoon Commander (PltCo)"
+	faction_group = list(FACTION_CANC)
+	faction = FACTION_CANC
+	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_CHINESE, LANGUAGE_ENGLISH)
+	assignment = JOB_CANC_PLATOON_LEADER
+	role_comm_title = "PLAT-CO"
+	rank = JOB_SO
+	paygrades = list(PAY_SHORT_CAO1 = JOB_PLAYTIME_TIER_0, PAY_SHORT_CAO2 = JOB_PLAYTIME_TIER_1, PAY_SHORT_CAO3 = JOB_PLAYTIME_TIER_2)
+	skills = /datum/skills/upp/officer
+	access = list(
+		ACCESS_CANC_GENERAL,
+		ACCESS_CANC_ARMORY,
+		ACCESS_CANC_ENGINEERING,
+		ACCESS_CANC_FLIGHT,
+		ACCESS_CANC_LEADERSHIP,
+		ACCESS_CANC_MACHINEGUN,
+		ACCESS_CANC_MEDICAL,
+		ACCESS_CANC_MEDPREP,
+		ACCESS_CANC_RESEARCH,
+		ACCESS_CANC_SECURITY,
+		ACCESS_CANC_TLPREP
+	)
+
+/datum/equipment_preset/uscm_ship/so/canc/equipped
+	name = "CANC Platoon Commander (PltCo) (Equipped)"
+
+/datum/equipment_preset/uscm_ship/so/canc/handle_late_join(mob/living/carbon/human/new_human, late_join)
+	if(!late_join)
+		add_verb(new_human.client, /client/proc/commander_rename_platoon)
+
 /datum/equipment_preset/uscm_ship/so/pmc
 	name = "PMC Overwatch (PltCo)"
 	paygrades = list("PMC-OW" = JOB_PLAYTIME_TIER_0)

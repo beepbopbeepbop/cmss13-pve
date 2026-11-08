@@ -26,26 +26,26 @@
 
 /datum/paygrade/canc/cae4
 	paygrade = PAY_SHORT_CAE4
-	name = "Sergeant, Second Class"
-	prefix = "2Sgt. "
+	name = "Sergeant"
+	prefix = "Sgt. "
 	pay_multiplier = 0.4
 
 /datum/paygrade/canc/cae5
 	paygrade = PAY_SHORT_CAE5
-	name = "Sergeant, First Class"
-	prefix = "1Sgt. "
+	name = "Staff Sergeant, Second Class"
+	prefix = "2SSgt. "
 	pay_multiplier = 0.7
 
 /datum/paygrade/canc/cae6
 	paygrade = PAY_SHORT_CAE6
-	name = "Staff Sergeant, Second Class"
-	prefix = "2SSgt. "
+	name = "Staff Sergeant, First Class"
+	prefix = "1SSgt. "
 	pay_multiplier = 0.8
 
 /datum/paygrade/canc/cae7
 	paygrade = PAY_SHORT_CAE7
-	name = "Staff Sergeant, First Class"
-	prefix = "1SSgt. "
+	name = "Master Sergeant, Third Class"
+	prefix = "3MSgt. "
 	pay_multiplier = 1.25
 
 /datum/paygrade/canc/cae8
@@ -72,20 +72,20 @@
 
 /datum/paygrade/canc/cao2
 	paygrade = PAY_SHORT_CAO2
-	name = "Senior Lieutenant"
-	prefix = "SnLt. "
+	name = "Lieutenant"
+	prefix = "Lt. "
 	pay_multiplier = 1.5
 
 /datum/paygrade/canc/cao3
 	paygrade = PAY_SHORT_CAO3
-	name = "Junior Captain"
-	prefix = "JrCpt. "
+	name = "Senior Lieutenant"
+	prefix = "SnLt. "
 	pay_multiplier = 2
 
 /datum/paygrade/canc/cao4
 	paygrade = PAY_SHORT_CAO4
-	name = "Senior Captain"
-	prefix = "SnCpt. "
+	name = "Captain"
+	prefix = "Cpt. "
 	pay_multiplier = 2.5
 
 /datum/paygrade/canc/cao5
@@ -96,30 +96,30 @@
 
 /datum/paygrade/canc/cao6
 	paygrade = PAY_SHORT_CAO6
-	name = "Junior Colonel"
-	prefix = "JrCol. "
+	name = "Lieutenant-Colonel"
+	prefix = "Lt. Col. "
 	pay_multiplier = 3.5
 
 /datum/paygrade/canc/cao7
 	paygrade = PAY_SHORT_CAO7
-	name = "Senior Colonel"
-	prefix = "SnCol. "
+	name = "Colonel"
+	prefix = "Col. "
 	pay_multiplier = 4
 
 /datum/paygrade/canc/cao8
 	paygrade = PAY_SHORT_CAO8
-	name = "Junior General"
-	prefix = "JnGen. "
+	name = "Lieutenant-General"
+	prefix = "Lt. Gen. "
 	pay_multiplier = 4.5
 
 /datum/paygrade/canc/cao9
 	paygrade = PAY_SHORT_CAO9
-	name = "Senior General"
-	prefix = "SnGen. "
+	name = "Major-General"
+	prefix = "Maj. Gen. "
 	pay_multiplier = 5
 
 /datum/paygrade/canc/cao10
 	paygrade = PAY_SHORT_CAO10
-	name = "Army Marshal"
-	prefix = "AM. "
+	name = "Colonel-General"
+	prefix = "Col. Gen. "
 	pay_multiplier = 5.5

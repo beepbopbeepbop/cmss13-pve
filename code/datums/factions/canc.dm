@@ -13,7 +13,7 @@
 	switch(_role)
 		if(JOB_CANC_MEDIC)
 			hud_icon_state = "med"
-		if(JOB_CANC_ENGI)
+		if(JOB_CANC_SAPPER)
 			hud_icon_state = "sapper"
 		if(JOB_CANC_MACHINEGUNNER)
 			hud_icon_state = "spec"

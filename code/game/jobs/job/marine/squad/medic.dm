@@ -125,17 +125,17 @@
 	job = /datum/job/marine/medic/ai/upp
 
 /datum/job/marine/medic/ai/canc
-	title = JOB_SQUAD_MEDIC_UPP
+	title = JOB_CANC_MEDIC
 	gear_preset = /datum/equipment_preset/uscm/medic/canc
-	gear_preset_secondary = /datum/equipment_preset/uscm/medic/canc/senior_private
-	gear_preset_tertiary = /datum/equipment_preset/uscm/medic/canc/private
-	job_options = list(PVT_VARIANT = "JrPvt", SR_PVT_VARIANT = "SnPvt", CPL_VARIANT = "Cpl")
+	gear_preset_secondary = /datum/equipment_preset/uscm/medic/canc/corporal
+	gear_preset_tertiary = /datum/equipment_preset/uscm/medic/canc/sergeant
+	job_options = list(PFC_VARIANT = "SnPvt", LCPL_VARIANT = "Cpl", CPL_VARIANT = "Sgt")
 
 /datum/job/marine/medic/ai/canc/handle_job_options(option)
 	gear_preset = initial(gear_preset)
-	if(option == SR_PVT_VARIANT)
+	if(option == LCPL_VARIANT)
 		gear_preset = gear_preset_secondary
-	if(option == PVT_VARIANT)
+	if(option == CPL_VARIANT)
 		gear_preset = gear_preset_tertiary
 
 /obj/effect/landmark/start/marine/medic/canc

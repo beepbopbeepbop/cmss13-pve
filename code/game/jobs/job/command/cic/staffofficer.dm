@@ -1,8 +1,9 @@
-
 #define FIRST_LT_VARIANT "First Lieutenant"
 #define SR_LT_VARIANT "Senior Lieutenant"
+#define LT_VARIANT "Lieutenant"
 #define SECOND_LT_VARIANT "Second Lieutenant"
 #define JR_LT_VARIANT "Junior Lieutenant"
+
 /datum/job/command/bridge
 	title = JOB_SO
 	total_positions = 4
@@ -92,6 +93,16 @@ OverrideTimelock(/datum/job/command/bridge, list(
 	icon_state = "so_spawn"
 	job = /datum/job/command/bridge/ai/upp
 
+/datum/job/command/bridge/ai/canc
+	title = JOB_CANC_PLATOON_LEADER
+	gear_preset = /datum/equipment_preset/uscm_ship/so/canc
+	job_options = list(JR_LT_VARIANT = "JrLt", LT_VARIANT = "Lt", SR_LT_VARIANT = "SnLt")
+
+/obj/effect/landmark/start/bridge/canc
+	name = JOB_CANC_PLATOON_LEADER
+	icon_state = "so_spawn"
+	job = /datum/job/command/bridge/ai/canc
+
 /datum/job/command/bridge/ai/pmc
 	title = JOB_PMCPLAT_OW
 	gear_preset = /datum/equipment_preset/uscm_ship/so/pmc
@@ -119,5 +130,6 @@ OverrideTimelock(/datum/job/command/bridge, list(
 
 #undef FIRST_LT_VARIANT
 #undef SR_LT_VARIANT
+#undef LT_VARIANT
 #undef SECOND_LT_VARIANT
 #undef JR_LT_VARIANT

@@ -136,15 +136,19 @@
 /datum/equipment_preset/uscm/pfc/canc
 	name = "CANC Orbital Army Rifleman"
 	assignment = JOB_CANC_RIFLEMAN
-	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_CAE1 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_CANC_GENERAL)
 	languages = list(LANGUAGE_CHINESE)
 	faction_group = list(FACTION_CANC)
 	faction = FACTION_CANC
 
-/datum/equipment_preset/uscm/pfc/canc/private
-	name = parent_type::name + " (E1 Rank)"
-	paygrades = list(PAY_SHORT_CAE1 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/pfc/canc/senior
+	name = parent_type::name + " (E2 Rank)"
+	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
+
+/datum/equipment_preset/uscm/pfc/canc/corporal
+	name = parent_type::name + " (E3 Rank)"
+	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/pfc/forecon
 	name = "FORECON Squad Rifleman"
@@ -217,19 +221,19 @@
 	name = "CANC Orbital Army Machinegunner"
 	access = list(ACCESS_CANC_GENERAL, ACCESS_CANC_MACHINEGUN)
 	assignment = JOB_CANC_MACHINEGUNNER
-	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "MG"
 	languages = list(LANGUAGE_CHINESE)
 	faction_group = list(FACTION_CANC)
 	faction = FACTION_CANC
 
-/datum/equipment_preset/uscm/sg/canc/senior_private
-	name = parent_type::name + " (E2 Rank)"
-	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/sg/canc/corporal
+	name = parent_type::name + " (E3 Rank)"
+	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
 
-/datum/equipment_preset/uscm/sg/canc/private
-	name = parent_type::name + " (E1 Rank)"
-	paygrades = list(PAY_SHORT_CAE1 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/sg/canc/sergeant
+	name = parent_type::name + " (E4 Rank)"
+	paygrades = list(PAY_SHORT_CAE4 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/sg/forecon
 	name = "FORECON Squad Smartgunner"
@@ -280,13 +284,9 @@
 	faction_group = list(FACTION_CANC)
 	faction = FACTION_CANC
 
-/datum/equipment_preset/uscm/rto/canc/senior_private
-	name = parent_type::name + " (E2 Rank)"
-	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
-
-/datum/equipment_preset/uscm/rto/canc/private
-	name = parent_type::name + " (E1 Rank)"
-	paygrades = list(PAY_SHORT_CAE1 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/rto/canc/sergeant
+	name = parent_type::name + " (E4 Rank)"
+	paygrades = list(PAY_SHORT_CAE4 = JOB_PLAYTIME_TIER_0)
 
 //*****************************************************************************************************/
 
@@ -345,7 +345,7 @@
 
 /datum/equipment_preset/uscm/medic/canc
 	name = "CANC Orbital Army Medic"
-	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_CANC_GENERAL, ACCESS_CANC_MEDPREP, ACCESS_CANC_MEDICAL)
 	assignment = JOB_CANC_MEDIC
 	role_comm_title = "MED"
@@ -353,13 +353,13 @@
 	faction_group = list(FACTION_CANC)
 	faction = FACTION_CANC
 
-/datum/equipment_preset/uscm/medic/canc/senior_private
-	name = parent_type::name + " (E2 Rank)"
-	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/medic/canc/corporal
+	name = parent_type::name + " (E3 Rank)"
+	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
 
-/datum/equipment_preset/uscm/medic/canc/private
-	name = parent_type::name + " (E1 Rank)"
-	paygrades = list(PAY_SHORT_CAE1 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/medic/canc/sergeant
+	name = parent_type::name + " (E4 Rank)"
+	paygrades = list(PAY_SHORT_CAE4 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/medic/forecon
 	name = "FORECON Squad Corpsman"
@@ -424,9 +424,9 @@
 	faction_group = list(FACTION_CANC)
 	faction = FACTION_CANC
 
-/datum/equipment_preset/uscm/tl/canc/junior_sergeant
-	name = parent_type::name + " (E4 Rank)"
-	paygrades = list(PAY_SHORT_CAE4 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/tl/canc/senior
+	name = parent_type::name + " (E6 Rank)"
+	paygrades = list(PAY_SHORT_CAE6 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/tl/forecon
 	name = "FORECON Assistant Squad Leader"
@@ -469,21 +469,21 @@
 
 /datum/equipment_preset/uscm/engineer/canc
 	name = "CANC Orbital Army Sapper"
-	assignment = JOB_CANC_ENGI
+	assignment = JOB_CANC_SAPPER
 	role_comm_title = "Sap"
-	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_CANC_GENERAL, ACCESS_CANC_ENGINEERING)
 	languages = list(LANGUAGE_CHINESE)
 	faction_group = list(FACTION_CANC)
 	faction = FACTION_CANC
 
-/datum/equipment_preset/uscm/engineer/canc/senior_private
-	name = parent_type::name + " (E2 Rank)"
-	paygrades = list(PAY_SHORT_CAE2 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/engineer/canc/corporal
+	name = parent_type::name + " (E3 Rank)"
+	paygrades = list(PAY_SHORT_CAE3 = JOB_PLAYTIME_TIER_0)
 
-/datum/equipment_preset/uscm/engineer/canc/private
-	name = parent_type::name + " (E1 Rank)"
-	paygrades = list(PAY_SHORT_CAE1 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/engineer/canc/sergeant
+	name = parent_type::name + " (E4 Rank)"
+	paygrades = list(PAY_SHORT_CAE4 = JOB_PLAYTIME_TIER_0)
 
 //*****************************************************************************************************/
 
@@ -531,9 +531,9 @@
 	faction_group = list(FACTION_UPP)
 	faction = FACTION_UPP
 
-/datum/equipment_preset/uscm/leader/canc/staff_sergeant_second_class
-	name = parent_type::name + " (E6 Rank)"
-	paygrades = list(PAY_SHORT_UE6 = JOB_PLAYTIME_TIER_0)
+/datum/equipment_preset/uscm/leader/canc/senior
+	name = parent_type::name + " (E8 Rank)"
+	paygrades = list(PAY_SHORT_CAE8 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/leader/forecon
 	name = "FORECON Squad Leader"

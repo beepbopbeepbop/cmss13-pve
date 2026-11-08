@@ -1,3 +1,8 @@
+#define CPL_VARIANT "Corporal"
+#define LCPL_VARIANT "Lance Corporal"
+#define PFC_VARIANT "Private First Class"
+#define PVT_VARIANT "Private"
+
 /datum/job/marine/specialist
 	title = JOB_SQUAD_SPECIALIST
 	total_positions = 4
@@ -65,6 +70,25 @@
 /datum/job/marine/specialist/ai/get_total_positions(latejoin=0)
 	return latejoin ? total_positions : spawn_positions
 
+/datum/job/marine/specialist/ai/canc
+	title = JOB_CANC_SPECIALIST
+	gear_preset = /datum/equipment_preset/uscm/sg/canc
+	gear_preset_secondary = /datum/equipment_preset/uscm/sg/canc/corporal
+	gear_preset_tertiary = /datum/equipment_preset/uscm/sg/canc/sergeant
+	job_options = list(PFC_VARIANT = "SnPvt", LCPL_VARIANT = "Cpl", CPL_VARIANT = "Sgt")
+
+/datum/job/marine/specialist/ai/canc/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == LCPL_VARIANT)
+		gear_preset = gear_preset_secondary
+	if(option == CPL_VARIANT)
+		gear_preset = gear_preset_tertiary
+
+/obj/effect/landmark/start/marine/specialist/canc
+	name = JOB_CANC_SPECIALIST
+	squad = SQUAD_CANC
+	job = /datum/job/marine/specialist/ai/canc
+
 /datum/job/marine/specialist/ai/rmc
 	total_positions = 1
 	spawn_positions = 1
@@ -79,3 +103,8 @@
 	name = JOB_TWE_RMC_MARKSMAN
 	squad = SQUAD_RMC
 	job = /datum/job/marine/specialist/ai/rmc
+
+#undef CPL_VARIANT
+#undef LCPL_VARIANT
+#undef PFC_VARIANT
+#undef PVT_VARIANT

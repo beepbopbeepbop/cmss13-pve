@@ -125,15 +125,15 @@
 /datum/job/marine/smartgunner/ai/canc
 	title = JOB_CANC_MACHINEGUNNER
 	gear_preset = /datum/equipment_preset/uscm/sg/canc
-	gear_preset_secondary = /datum/equipment_preset/uscm/sg/canc/senior_private
-	gear_preset_tertiary = /datum/equipment_preset/uscm/sg/canc/private
-	job_options = list(PVT_VARIANT = "JrPvt", SR_PVT_VARIANT = "SnPvt", CPL_VARIANT = "Cpl")
+	gear_preset_secondary = /datum/equipment_preset/uscm/sg/canc/corporal
+	gear_preset_tertiary = /datum/equipment_preset/uscm/sg/canc/sergeant
+	job_options = list(PFC_VARIANT = "SnPvt", LCPL_VARIANT = "Cpl", CPL_VARIANT = "Sgt")
 
 /datum/job/marine/smartgunner/ai/canc/handle_job_options(option)
 	gear_preset = initial(gear_preset)
-	if(option == SR_PVT_VARIANT)
+	if(option == LCPL_VARIANT)
 		gear_preset = gear_preset_secondary
-	if(option == PVT_VARIANT)
+	if(option == CPL_VARIANT)
 		gear_preset = gear_preset_tertiary
 
 /obj/effect/landmark/start/marine/smartgunner/canc

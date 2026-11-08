@@ -256,7 +256,7 @@ most of them are tied into map-placed objects. This should be reworked in the fu
 #define ACCESS_LIST_UPP_PLATOON "UPP (Platoon)"
 
 ///All access levels associated with CANC
-#define ACCESS_LIST_CANC_ALL "UPP (ALL)"
+#define ACCESS_LIST_CANC_ALL "CANC (ALL)"
 #define ACCESS_LIST_CANC_PLATOON "CANC (Platoon)"
 
 ///Generic/basic access to CLF stuff

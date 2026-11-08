@@ -1,3 +1,4 @@
+#define CPL_VARIANT "Corporal"
 #define LCPL_VARIANT "Lance Corporal"
 #define PFC_VARIANT "Private First Class"
 
@@ -73,6 +74,25 @@
 /datum/job/marine/engineer/ai/get_total_positions(latejoin=0)
 	return latejoin ? total_positions : spawn_positions
 
+/datum/job/marine/engineer/ai/canc
+	title = JOB_CANC_SAPPER
+	gear_preset = /datum/equipment_preset/uscm/engineer/canc
+	gear_preset_secondary = /datum/equipment_preset/uscm/engineer/canc/corporal
+	gear_preset_tertiary = /datum/equipment_preset/uscm/engineer/canc/sergeant
+	job_options = list(PFC_VARIANT = "SnPvt", LCPL_VARIANT = "Cpl", CPL_VARIANT = "Sgt")
+
+/datum/job/marine/engineer/ai/canc/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == LCPL_VARIANT)
+		gear_preset = gear_preset_secondary
+	if(option == CPL_VARIANT)
+		gear_preset = gear_preset_tertiary
+
+/obj/effect/landmark/start/marine/engineer/canc
+	name = JOB_CANC_SAPPER
+	squad = SQUAD_CANC
+	job = /datum/job/marine/engineer/ai/canc
+
 /datum/job/marine/engineer/ai/rmc
 	total_positions = 1
 	spawn_positions = 1
@@ -103,5 +123,6 @@
 	squad = SQUAD_RMC
 	job = /datum/job/marine/engineer/ai/rmcmortar
 
+#undef CPL_VARIANT
 #undef LCPL_VARIANT
 #undef PFC_VARIANT

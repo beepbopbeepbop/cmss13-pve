@@ -128,7 +128,7 @@
 	job = JOB_CANC_SPECIALIST
 
 /obj/structure/closet/secure_closet/marine_personal/canc/sapper
-	job = JOB_CANC_ENGI
+	job = JOB_CANC_SAPPER
 
 /obj/structure/closet/secure_closet/marine_personal/canc/sapper/spawn_gear()
 	new /obj/item/clothing/head/cmcap/flap/canc(src)

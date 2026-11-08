@@ -970,6 +970,7 @@
 	name = "CANC Dzho Automaton - Combat"
 	faction = FACTION_CANC
 	faction_group = list(FACTION_LIST_CANC)
+	assignment = JOB_CANC_SYNTH_COMBAT
 
 /datum/equipment_preset/synth/working_joe/upp/combat/canc/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
