@@ -1,20 +1,10 @@
 /datum/human_ai_equipment_preset/canc
 	faction = FACTION_CANC
 
-/datum/human_ai_equipment_preset/canc/newblood
-	name = "CANC Colonist Recruit"
-	desc = "CANC Remnant Force, Colonist recruit. Random Rifle."
-	path = /datum/equipment_preset/canc/newblood
-
-/datum/human_ai_equipment_preset/canc/newblood_machinegunner
-	name = "CANC Colonist Recruit - MAR LMG"
-	desc = "CANC Remnant Force, Colonist recruit. MAR LMG."
-	path = /datum/equipment_preset/canc/newblood_machinegunner
-
 /datum/human_ai_equipment_preset/canc/rifleman
 	name = "CANC Squad Rifleman"
 	desc = "CANC Remnant Force rifleman, Random Rifle"
-	path = /datum/equipment_preset/canc/remnant
+	path = /datum/equipment_preset/canc/rifleman
 
 /datum/human_ai_equipment_preset/canc/machinegunner
 	name = "CANC Squad Machinegunner"
@@ -34,12 +24,12 @@
 /datum/human_ai_equipment_preset/canc/leader
 	name = "CANC Squad Leader"
 	desc = "CANC Remnant Force squad leader, Random Rifle"
-	path = /datum/equipment_preset/canc/remnant/leader
+	path = /datum/equipment_preset/canc/team_leader
 
 /datum/human_ai_equipment_preset/canc/marksman
 	name = "CANC Squad Marksman"
 	desc = "Type 88 DMR and a dream, make them pay for the Dog War."
-	path = /datum/equipment_preset/canc/remnant/marksman
+	path = /datum/equipment_preset/canc/marksman
 
 /datum/human_ai_equipment_preset/canc/combat_android
 	name = "CANC Combat Android"

@@ -74,7 +74,6 @@
 	var/static/list/machinegunner_equipment_presets = list(
 		/datum/equipment_preset/rebel/soldier::name = /datum/equipment_preset/rebel/soldier,
 		/datum/equipment_preset/clf/soldier::name = /datum/equipment_preset/clf/soldier,
-		/datum/equipment_preset/canc/newblood_machinegunner::name = /datum/equipment_preset/canc/newblood_machinegunner,
 		/datum/equipment_preset/canc/machinegunner::name = /datum/equipment_preset/canc/machinegunner,
 		/datum/equipment_preset/upp/machinegunner::name = /datum/equipment_preset/upp/machinegunner,
 		/datum/equipment_preset/contractor/duty/heavy::name = /datum/equipment_preset/contractor/duty/heavy,
